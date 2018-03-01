@@ -28,3 +28,7 @@ while (loss > eps and iter_count < max_iters):
         error = 0.5 * (pred_y - y[i]) ** 2
         loss = loss + error
     iter_count += 1
+
+print("theta:", theta)
+print("final loss: ", loss)
+print("iters: ", iter_count)

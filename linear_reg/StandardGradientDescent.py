@@ -23,3 +23,6 @@ while( loss > eps and iter_count < max_iters):
         loss = loss + error
     iter_count += 1
 
+print("theta:", theta)
+print("final loss: ", loss)
+print("iters: ", iter_count)
