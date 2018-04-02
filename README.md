@@ -1,5 +1,5 @@
-# ML-linear_regression
-机器学习算法相关代码
+# ml_algorithm_practice
+机器学习算法代码实践
 
 ### 最优化算法
 
