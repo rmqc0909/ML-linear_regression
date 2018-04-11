@@ -3,18 +3,21 @@ import numpy as np
 
 class Perceptron(object):
     """Perceptron classifier.
+
     Parameters
     ------------
     eta : float
-    Learning rate (between 0.0 and 1.0)
+        Learning rate (between 0.0 and 1.0)
     n_iter : int
-    Passes over the training dataset.
+        Passes over the training dataset.
+
     Attributes
     -----------
     w_ : 1d-array
-    Weights after fitting.
+        Weights after fitting.
     errors_ : list
-    Number of misclassifications in every epoch.
+        Number of misclassifications in every epoch.
+
     """
 
     def __init__(self, eta=0.01, n_iter=10):
@@ -23,12 +26,14 @@ class Perceptron(object):
 
     def fit(self, X, y):
         """Fit training data.
+
         :param X: {array-like}, shape = [n_samples, n_features]
-        Training vectors, where n_samples
-        is the number of samples and n_features is the number of features.
+            Training vectors, where n_samples
+            is the number of samples and n_features is the number of features.
         :param y: array-like, shape = [n_samples]
-        Target values.
+            Target values.
         :return: self : object
+
         """
         self.w_ = np.zeros(1 + X.shape[1])
         self.errors_ = []
