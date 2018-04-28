@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print('超参数：\n', lasso_model.best_params_)
 
     y_hat = lasso_model.predict(np.array(x_test))
-    print(lasso_model.score(x_test, y_test))    # 确定性系数,表示模型对现实数据的拟合程度，一定是介于0~1间的数。
+    print(lasso_model.score(x_test, y_test))    # 判定系数,表示模型对现实数据的拟合程度，一定是介于0~1间的数。
     mse = np.average((y_hat - np.array(y_test)) ** 2)  # Mean Squared Error
     rmse = np.sqrt(mse)  # Root Mean Squared Error
     print(mse, rmse)
