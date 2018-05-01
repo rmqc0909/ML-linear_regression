@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 
 if __name__ == "__main__":
-    path = 'F:\code\ml_algorithm_practice\\regression\\10.Advertising.csv'
+    path = '/Users/xiedan/PycharmProjects/ml_algorithm_practice/regression/10.Advertising.csv'
 
     # numpy读入
     # p = np.loadtxt(path, delimiter=',', skiprows=1)
