@@ -38,15 +38,15 @@ def gradient_run(x, y, init_m, init_b, learning_rate, n_times):
 
 def main():
     path = "F:\code\ml_algorithm_practice\linear_regression\data\\10.Advertising.csv"
-    data = pd.read_csv(path)
+    data = pd.read_csv(path)  # 利用梯度下降算法求线性模型参数时，若数据基本不是线性走向，则该方法很难得到收敛结果。
     # x = data["TV"]
     # y = data["Sales"]
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])  # 该数据基本上为线性走向。
     y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
     init_m = 0
     init_b = 0
     learning_rate = 0.0001
-    n_times = 3000
+    n_times = 1000
     [m, b] = gradient_run(x, y, init_m, init_b, learning_rate, n_times)
     print("final m = {0}, b = {1}".format(m, b))
 
